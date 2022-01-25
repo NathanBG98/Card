@@ -9,6 +9,8 @@ package studentlist;
  *
  * @author Nathan BG
  */
+
+// Comment: testing this comment for diff changes
 public class Student {
     private String name;
     private String number;
