@@ -5,21 +5,29 @@
  */
 package studentlist;
 
+import findthestudent.Student;
+
 /**
  *
  * @author Ronak
  */
 public class studentList {
     public static void main(String[] args){
-        Student [] studentList = new Student[3];
-        studentList[0] = new Student("s1","Ronak Sheth");
-        studentList[1] = new Student("s2","John Doe");
-        studentList[2] = new Student("s3","abc");
+        Student [] students = new Student[5];
+        students[0] = new Student("Cindy","333", 23);
+        students[1] = new Student("Barb","222", 22);
+        students[2] = new Student("Amy","111", 21);
+        students[3] = new Student("Emma","555", 25);
+        students[4] = new Student("Diane","123", 24);
+        students[5] = new Student("Tyler","567", 65);
+        students[6] = new Student("Kyle","341", 87);
+        students[7] = new Student("Brianna","677", 11);
+        students[8] = new Student("James","789", 46);
+        students[9] = new Student("Winston","444", 31);
+        students[10] = new Student("Carl","999", 29);
         
-        for(int  i = 0;i<studentList.length;i++){
-            System.out.print(studentList[i].getStudentId());
-            System.out.print("  ");
-            System.out.println(studentList[i].getStudentName());
+            for (int i=0; i< students.length; i++){
+                System.out.println(students[i]);
         }
         
     }

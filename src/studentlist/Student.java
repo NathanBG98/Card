@@ -7,33 +7,65 @@ package studentlist;
 
 /**
  *
- * @author Ronak
+ * @author Nathan BG
  */
 
 // Comment: testing this comment for diff changes : )
 public class Student {
-    
+    private String name;
+    private String number;
     private String studentId;
     private String studentName;
-    
-    public Student(String studentId,String studentName){
+    private String address;
+
+    public Student(String name, String number, String studentId, String studentName, String address) {
+        this.name = name;
+        this.number = number;
         this.studentId = studentId;
-        this.studentName=studentName;                
+        this.studentName = studentName;
+        this.address = address;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
     public String getStudentId() {
         return studentId;
     }
-    public void setStudentId(String studentId) {
-        this.studentId = studentId;
-    }
+
     public String getStudentName() {
         return studentName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
     }
 
     public void setStudentName(String studentName) {
         this.studentName = studentName;
     }
-    
-    
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     
 }
+    
